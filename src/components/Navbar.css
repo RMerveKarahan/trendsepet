@@ -1,0 +1,215 @@
+/* Navbar.css */
+
+/* Mağaza Başlığı */
+.navbar-title {
+    color: #E67E22; /* Canlı turuncu */
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  /* Navbar konteyner */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* aralarındaki boşluk */
+}
+
+  .navbar-logo {
+    color: #E67E22; /* Turuncu */
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  
+  /* Navbar içindeki logo ve yazıyı hizalayan kutu */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Logo ile yazı arasındaki boşluk */
+}
+
+/* Logo resmi */
+.logo-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2px;
+}
+
+/* Başlık yazısı */
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #E67E22;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #f5f5f5;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+}
+  
+  /* Sepet ikonu ve sayısı */
+  .cart-icon-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Sepet ikonu (ikonun kendisi için stil, svg veya img olabilir) */
+  .cart-icon {
+    width: 28px;
+    height: 28px;
+    fill: #2c3e50; /* Koyu gri */
+    transition: fill 0.3s ease;
+  }
+  
+  .cart-icon-container:hover .cart-icon {
+    fill: #E67E22; /* Turuncu hover */
+  }
+  
+  /* Sepet içindeki ürün sayısı rozeti */
+  .cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: rgb(215, 88, 14);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+  }
+  
+  
+  /* Sepete Ekle butonu */
+  .button-add-to-cart {
+    background-color: #f3831a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(234, 102, 41, 0.4);
+  }
+  
+  .button-add-to-cart:hover {
+    background-color: #e7711d; /* Koyu mavi hover */
+  }
+  
+  .search-container {
+    position: relative;
+    width: 300px; /* İstersen genişlik ayarla */
+    margin: 0 auto; /* Ortalamak için */
+  }
+  
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* sağdan 40px boşluk ikon için */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: block;
+    z-index: 1;
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: orange;
+    pointer-events: none; /* ikon inputun tıklanmasını engellemez */
+    z-index: 2;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: orange; /* Turuncu renk */
+    padding: 0;
+    line-height: 1;
+  }
+  
+  
+  /* Genel sayfa arka planı */
+  body {
+    background-color: #f8f9fa; /* Açık gri nötr */
+    color: #2c3e50; /* Koyu gri metin */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart-link {
+    position: relative;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cart-link:hover {
+    color: #E67E22; /* Turuncu hover */
+  }
+  
