@@ -1,7 +1,8 @@
 # TrendSepet
 
 
-![TrendsSepet Logo](trendsepet-logo.png)
+![TrendsSepet Logo](images/trendsepet-logo.png)
+
 
 
 TrendSepet, modern kullanıcı arayüzü ile basit bir e-ticaret vitrin uygulamasıdır. React kullanılarak geliştirilmiştir.
